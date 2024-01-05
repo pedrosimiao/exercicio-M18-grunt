@@ -1,0 +1,51 @@
+body {
+  background-color: #1e272e;
+  font-family: Roboto, sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  color: #00ff00;
+  font-family: 'Rubik Broken Fax', system-ui;
+}
+h2 {
+  padding: 2em;
+}
+.container {
+  margin-top: 4em;
+  margin-bottom: 4em;
+  width: 20em;
+}
+.container .inputBox,
+.container .outputBox {
+  height: 12em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container .inputBox {
+  background-color: #808e9b;
+}
+.container .inputBox input {
+  background-color: transparent;
+  height: 3em;
+  width: 6em;
+  text-align: center;
+  font-family: Roboto, sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  border: none;
+}
+.container .inputBox input:focus {
+  outline: none;
+  appearance: none;
+}
+.container .outputBox {
+  background-color: #d2dae2;
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  word-break: break-all;
+}

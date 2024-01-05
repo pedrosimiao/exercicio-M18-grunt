@@ -1,0 +1,67 @@
+@fontePrincipal: Roboto, sans-serif;
+@fonteDoTitulo: 'Rubik Broken Fax', system-ui;
+
+@corDoTitulo: #00ff00;
+@corDeFundo: #1e272e;
+@corInputBox: #808e9b;
+@corOutputBox: #d2dae2;
+
+body {
+    background-color: @corDeFundo;
+    font-family: @fontePrincipal;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: @corDoTitulo;
+    font-family: @fonteDoTitulo;
+}
+
+h2 {
+    padding: 2em;
+}
+
+.container {
+    margin-top: 4em;
+    margin-bottom: 4em;
+    width: 20em;
+
+    
+    .inputBox, .outputBox {
+        height: 12em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .inputBox {
+        background-color: @corInputBox;
+
+        input {
+            background-color: transparent;
+            height: 3em;
+            width: 6em;
+            text-align: center;
+            font-family: @fontePrincipal;
+            font-size: 1.5em;
+            font-weight: bold;
+            border: none; 
+            
+            &:focus {
+                outline: none;
+                appearance: none;
+            }
+        }
+    }
+
+    .outputBox {
+        background-color: @corOutputBox;
+        font-family: @fontePrincipal;
+        font-weight: bold;
+        word-break: break-all;
+    }
+}
